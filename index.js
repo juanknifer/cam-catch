@@ -1,7 +1,7 @@
 const video = document.getElementById("video");
 const snap = document.getElementById("snap");
 const canvas = document.getElementById("canvas");
-//const clear = document.getElementById("clear");
+const clear = document.getElementById("clear");
 const errorMsgElement = document.querySelector("span#errorMsg");
 
 const constraints = {
@@ -34,6 +34,6 @@ snap.addEventListener("click", function () {
   context.drawImage(video, 0, 0, 640, 480);
 });
 
-/*clear.addEventListener("click", function () {
-  alert("funciona");
-});*/
+clear.addEventListener("click", function () {
+  location.reload();
+});
