@@ -1,39 +1,15 @@
-const video = document.getElementById("video");
-const snap = document.getElementById("snap");
-const canvas = document.getElementById("canvas");
-const clear = document.getElementById("clear");
-const errorMsgElement = document.querySelector("span#errorMsg");
+const http = require('http');
+const fs =require('fs');
 
-const constraints = {
-  audio: false,
-  video: {
-    width: 800,
-    height: 600
-  }
-};
+//const { type } = require('os');
 
-// Acceso a la webcam
-async function init() {
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia(constraints);
-    handleSuccess(stream);
-  } catch (e) {
-    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
-  }
-}
-// Correcto!
-function handleSuccess(stream) {
-  window.stream = stream;
-  video.srcObject = stream;
-}
-// Load init
-init();
-// Dibuja la imagen
-var context = canvas.getContext("2d");
-snap.addEventListener("click", function () {
-  context.drawImage(video, 0, 0, 640, 480);
-});
+const hostname = '127.0.0.1';
+const port = 3000;
+const timer = 300;
 
-clear.addEventListener("click", function () {
-  location.reload();
-});
+http.createServer(function(req, res){
+    console.log('funciona');
+    res.writeHead(200, {'content-type':'text/HTML' } )
+    res.write('Works');
+    res.end();
+  }).listen(3000);

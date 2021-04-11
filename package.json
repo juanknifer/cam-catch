@@ -1,0 +1,24 @@
+{
+  "name": "juan",
+  "version": "1.0.0",
+  "description": "cam catch",
+  "main": "index.js",
+  "scripts": {
+    "dev" : "node index"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanknifer/cam-catch.git"
+  },
+  "keywords": [
+    "cam",
+    "catch"
+  ],
+  "author": "juan varela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanknifer/cam-catch/issues"
+  },
+  "homepage": "https://github.com/juanknifer/cam-catch#readme"
+}
