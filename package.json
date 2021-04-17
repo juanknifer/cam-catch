@@ -4,8 +4,7 @@
   "description": "cam catch",
   "main": "index.js",
   "scripts": {
-    "dev" : "node index"
-    
+    "dev": "node index"
   },
   "repository": {
     "type": "git",
@@ -20,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/juanknifer/cam-catch/issues"
   },
-  "homepage": "https://github.com/juanknifer/cam-catch#readme"
+  "homepage": "https://github.com/juanknifer/cam-catch#readme",
+  "dependencies": {
+    "formidable": "^1.2.2"
+  }
 }
