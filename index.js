@@ -6,7 +6,7 @@ var formidable = require('formidable');
 
 const hostname = '127.0.0.1';
 const port = 3000;
-<<<<<<< HEAD
+ HEAD
 
  function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -81,7 +81,7 @@ const port = 3000;
     server.listen(port,hostname,()=>{
       console.log('server is running')
     });
-=======
+
 //const timer = 300;
 
 const server = http.createServer(function(req, res){
@@ -95,4 +95,4 @@ const server = http.createServer(function(req, res){
    console.log('server is running')
  });
   
->>>>>>> 12cdc48465d45cb29bc6cbbdfdc211182c490506
+
